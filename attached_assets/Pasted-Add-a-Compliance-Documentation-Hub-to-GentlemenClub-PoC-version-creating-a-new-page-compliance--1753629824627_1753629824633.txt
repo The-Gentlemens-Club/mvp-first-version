@@ -1,0 +1,36 @@
+Add a Compliance Documentation Hub to GentlemenClub-PoC-version, creating a new page (`/compliance`, e.g., `compliance.html`) to showcase The Gentlemen's Club’s KYC/AML architecture, licensing pathways, and audit trail capabilities for a compliant GambleFi DAO (Investor Deck Slide 2). Ensure the POC remains testnet-only (Sepolia), with “DEMO ONLY” branding, and aligns with the “Old Luxury” aesthetic (dark blue #1E3A8A, gold #D4AF37, Playfair Display font, Slide 9) for a startup competition pitch.
+
+Requirements:
+1. **Compliance Hub Page (`compliance.html`)**:
+   - Create a responsive page with sections:
+     - **KYC/AML Architecture**: Mock KYC form (e.g., “Verify Identity” input, Slide 6) with a “Verified” badge animation.
+     - **Licensing Pathways**: Display a timeline (e.g., “Q1 2026: Curaçao License”, Slide 6).
+     - **Audit Trails**: Show mock transaction logs (e.g., “Bet: 100 $GTLM, Timestamp: 2025-07-27”, Slide 5).
+   - Add a “DEMO ONLY” watermark in the header/footer.
+   - Include a button: “Simulate KYC Check” (mock SumSub API call).
+2. **Integration**:
+   - Add a navigation link to `/compliance` in `index.html`, `nft-collection.html`, `betting.html`, `dao.html`.
+   - Update `styles.css` with “Old Luxury” styling (dark blue background, gold borders, Playfair Display for headings, Lora for body).
+   - Use mock data in `compliance.json` (e.g., `{ "transaction": "Bet 100 $GTLM", "timestamp": "2025-07-27" }`).
+3. **Animations**:
+   - Add fade-in for KYC badge and hover effects on buttons (`transform: scale(1.05)`).
+4. **Responsiveness**:
+   - Ensure mobile (1-column, <768px) and desktop (2-column, >768px) compatibility using Tailwind CSS or media queries.
+5. **Performance**:
+   - Compress images in `/assets` (<100KB).
+   - Minify `styles.css` and JS files (e.g., `compliance.js`).
+6. **Documentation**:
+   - Update `UI-UX-Report.md`: “Compliance Hub (`compliance.html`) supports Slide 6, showcasing KYC/AML and licensing for competition.”
+   - Update `README.md`: “`compliance.html`: Compliance Hub for investor trust (Slide 2, 6).”
+
+Constraints:
+- Use Sepolia testnet only, with no real money transactions.
+- Use existing stack (Node.js, JavaScript, HTML/CSS, or React if in `package.json`).
+- Avoid external APIs; mock KYC/AML (e.g., `compliance.js`).
+- Update `/public` or `/src`, preserving existing pages.
+- Add comments (e.g., `// Slide 6: KYC architecture`).
+
+Output:
+- New `compliance.html`, `compliance.js`, `compliance.json`.
+- Updated `index.html`, `styles.css`, `UI-UX-Report.md`, `README.md`.
+- Optimized `/assets` with mock compliance images (e.g., KYC badge).

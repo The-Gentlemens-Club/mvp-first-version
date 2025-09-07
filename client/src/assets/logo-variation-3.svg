@@ -1,0 +1,39 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="goldGradient3" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#DAA520;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B8860B;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="redGradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#8B0000;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#4B0000;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background hexagon -->
+  <polygon points="100,20 160,60 160,140 100,180 40,140 40,60" fill="#1A1A1A" stroke="url(#goldGradient3)" stroke-width="4"/>
+  
+  <!-- Inner decorative ring -->
+  <circle cx="100" cy="100" r="60" stroke="url(#goldGradient3)" stroke-width="2" fill="none" opacity="0.3"/>
+  
+  <!-- Crown -->
+  <polygon points="70,60 80,45 90,55 100,40 110,55 120,45 130,60 125,70 75,70" fill="url(#goldGradient3)"/>
+  
+  <!-- Crown jewels -->
+  <circle cx="85" cy="52" r="2" fill="url(#redGradient)"/>
+  <circle cx="100" cy="47" r="3" fill="url(#redGradient)"/>
+  <circle cx="115" cy="52" r="2" fill="url(#redGradient)"/>
+  
+  <!-- Monogram GC -->
+  <text x="88" y="120" font-family="serif" font-size="28" font-weight="bold" fill="url(#goldGradient3)">G</text>
+  <text x="108" y="120" font-family="serif" font-size="28" font-weight="bold" fill="url(#goldGradient3)">C</text>
+  
+  <!-- Decorative flourishes -->
+  <path d="M70 130 Q100 120 130 130" stroke="url(#goldGradient3)" stroke-width="2" fill="none"/>
+  <path d="M75 140 Q100 135 125 140" stroke="url(#goldGradient3)" stroke-width="1" fill="none" opacity="0.7"/>
+  
+  <!-- Bottom banner -->
+  <rect x="60" y="155" width="80" height="20" rx="10" fill="url(#redGradient)" stroke="url(#goldGradient3)" stroke-width="1"/>
+  <text x="100" y="168" font-family="serif" font-size="10" text-anchor="middle" fill="url(#goldGradient3)">ELITE</text>
+</svg>

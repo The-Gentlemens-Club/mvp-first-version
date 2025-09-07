@@ -1,0 +1,26 @@
+As the AI Agent for the Gentlemen's Club PoC on Replit, your task is to significantly enhance the User Interface and User Experience, specifically focusing on polish and a premium feel for investor demonstrations. Maintain the existing "neo-luxury" aesthetic with its deep navy and gold palette, glassmorphism, and elegant typography.
+
+Here are the specific UI/UX improvements to implement:
+
+1.  **Enhanced Loading States & Transitions:**
+    * Implement **loading skeletons** for content areas that fetch data, particularly for the Casino game section before it loads and for the Staking Dashboard.
+    * Create **smooth, subtle fade-in/fade-out or gentle slide transitions** when navigating between tabs (Casino, Staking Dashboard, Games Browser, etc.) and between routes. Avoid abrupt content changes.
+
+2.  **Micro-Animations Package:**
+    * Add **subtle hover effects** (e.g., slight `scale` increase and `box-shadow` depth) to all interactive elements, including buttons (like "Play Dice," "Deposit," "Withdraw"), cards, and navigation links.
+    * Implement **number count-up animations** for all key statistics displayed on the Hero section of the landing page (e.g., "Total Wagered," "Active Players") and for financial metrics on the Staking Dashboard (e.g., "Your Staked GTLM," "Total Revenue Shared") when they initially load or update.
+    * Introduce **subtle entrance animations** (e.g., a gentle fade-up or slide-in from the bottom) for major content sections as they scroll into view on the landing page.
+
+3.  **Mobile Navigation Upgrade:**
+    * For mobile viewports, implement a **fixed bottom navigation bar**. This bar should include 3-5 key navigational icons/labels (e.g., Home, Casino, Staking, Profile).
+    * Ensure **responsive touch feedback** for these navigation items, such as a subtle visual highlight or brief animation on tap (simulating haptic feedback).
+
+4.  **Provably Fair Clarity Enhancement (Dice Game):**
+    * Within the Dice game interface, after each roll, clearly display the **"Server Seed (Hash)," "Client Seed," and the "Combined Hash" or "Final Result Derivation."**
+    * Add a clear, visible **"Verify this Bet" button or link** next to these details. When clicked, this should trigger a simple, concise explanation (e.g., a modal or tooltip) of how the provably fair mechanism works and how the player can verify the outcome (e.g., by combining seeds and hashing).
+
+5.  **Staking Dashboard - Voting Power Display:**
+    * On the Staking Dashboard, add a dedicated section or prominent display element for **"Your Total Voting Power (veGTLM)."**
+    * Below this, include a brief, conceptual explanation of how it's calculated: `Staked GTLM Amount x [Conceptual Time-Lock Multiplier]`. You can show a placeholder multiplier (e.g., "Currently 1.5x based on 12-month lock-up option") even if the full time-lock selection isn't interactive yet for the PoC.
+
+Ensure all these additions are seamlessly integrated into the existing design, maintaining the high-quality, luxury feel.

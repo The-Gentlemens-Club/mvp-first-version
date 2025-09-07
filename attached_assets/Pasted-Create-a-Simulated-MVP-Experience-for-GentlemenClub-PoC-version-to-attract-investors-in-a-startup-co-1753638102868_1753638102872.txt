@@ -1,0 +1,40 @@
+Create a Simulated MVP Experience for GentlemenClub-PoC-version to attract investors in a startup competition, showcasing The Gentlemen's Club’s luxurious, compliant GambleFi DAO (Investor Deck Slide 2) and $GTLM tokenomics (Slide 5) for a $400K pre-seed raise (Slide 6). Build a new page (`/mvp-demo`, e.g., `mvp-demo.html`) that combines an interactive betting simulator, NFT minting demo, DAO governance simulator, mock analytics snapshot, and compliance visuals, all on Sepolia testnet with “DEMO ONLY” branding. Use the “Old Luxury” aesthetic (dark blue #1E3A8A, gold #D4AF37, Playfair Display font, Slide 9).
+
+Requirements:
+1. **Simulated MVP Experience (`mvp-demo.html`)**:
+   - **Betting Simulator**: Form to place mock $GTLM bets (e.g., input “100 $GTLM”, select “Roulette”). Display provably fair outcome (e.g., “Win: 200 $GTLM”). Mock Chainlink VRF (Slide 2).
+   - **NFT Minting Demo**: Button to “Mint Gold Tier NFT” with mock KYC form (input “Name”, “ID Number”) and animated “Minted” badge (Slide 5).
+   - **DAO Governance Simulator**: Form to cast mock vote (e.g., “Increase Treasury Allocation”) and show treasury update (e.g., “30% NGR Allocated”, Slide 4).
+   - **Analytics Snapshot**: Chart.js bar chart for mock revenue ($1M NGR Year 1) and pie chart for market potential ($10B TAM, $500M SAM, Slide 2).
+   - **Compliance Visuals**: “DEMO ONLY” watermark in header/footer. KYC prompt before actions (e.g., “Verify to Bet/Mint/Vote”, Slide 6).
+2. **Interactive Features**:
+   - Simulate bet outcome: `mvp-demo.js` logs “Win/Loss” with mock randomness.
+   - Simulate NFT mint: Show badge after KYC.
+   - Simulate vote: Update treasury mock data.
+   - Toggle analytics charts (e.g., “Revenue” vs. “Market”).
+3. **Design**:
+   - Apply “Old Luxury” aesthetic: Dark blue background, gold borders, Playfair Display for headings, Lora for body.
+   - Add animations: Fade-in for badges, hover effects on buttons (`transform: scale(1.05)`).
+4. **Integration**:
+   - Add navigation link to `/mvp-demo` in `index.html`, `nft-collection.html`, `betting.html`, `dao.html`.
+   - Use mock data in `mvp-demo.json` (e.g., `{ "bet": "100 $GTLM", "outcome": "Win" }`).
+5. **Responsiveness**:
+   - Ensure mobile (1-column, <768px) and desktop (2-column, >768px) compatibility using Tailwind CSS or media queries.
+6. **Performance**:
+   - Compress images in `/assets` (<100KB).
+   - Minify `styles.css` and `mvp-demo.js`.
+7. **Documentation**:
+   - Update `UI-UX-Report.md`: “Simulated MVP Experience (`mvp-demo.html`) supports Slides 2, 4, 5, 6, showcasing interactive demo for investors.”
+   - Update `README.md`: “`mvp-demo.html`: Investor-focused demo for $400K pre-seed (Slides 2, 6).”
+
+Constraints:
+- Use Sepolia testnet only, no real money transactions.
+- Use existing stack (Node.js, JavaScript, HTML/CSS, or React if in `package.json`).
+- Mock APIs (e.g., KYC, Chainlink VRF) in `mvp-demo.js`.
+- Update `/public` or `/src`, preserving existing pages.
+- Add comments (e.g., `// Slide 5: NFT minting demo`).
+
+Output:
+- New `mvp-demo.html`, `mvp-demo.js`, `mvp-demo.json`.
+- Updated `index.html`, `styles.css`, `UI-UX-Report.md`, `README.md`.
+- Optimized `/assets` with mock images (e.g., KYC badge, $GTLM token).

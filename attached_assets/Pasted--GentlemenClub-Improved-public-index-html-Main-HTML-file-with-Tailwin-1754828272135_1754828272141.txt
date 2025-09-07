@@ -1,0 +1,70 @@
+```
+/GentlemenClub-Improved
+├── /public
+│   ├── index.html          # Main HTML file with Tailwind CSS
+│   ├── styles.css          # Custom CSS (if needed beyond Tailwind)
+│   └── scripts.js          # Client-side JavaScript for interactivity
+├── /server
+│   ├── server.js           # Node.js/Express backend with API
+│   └── db.js               # Replit Database utilities
+├── /tests
+│   └── validation.test.js  # Jest tests for client-side validation
+├── README.md               # Project documentation
+└── package.json            # Node.js dependencies and scripts
+```
+
+#### 1. `public/index.html`
+Modernized homepage with Tailwind CSS, a navigation bar, and a simple form.
+
+<xaiArtifact artifact_id="cf20b391-c233-4d7d-9966-7311c5d3e333" artifact_version_id="d0f9e4de-7590-4f39-87af-6283987f3ca8" title="index.html" contentType="text/html">
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gentlemen Club</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-900 text-white">
+  <!-- Navigation Bar -->
+  <nav class="bg-gray-800 p-4">
+    <div class="max-w-7xl mx-auto flex justify-between items-center">
+      <h1 class="text-xl font-bold">Gentlemen Club</h1>
+      <div class="space-x-4">
+        <a href="#" class="hover:text-gray-300">Home</a>
+        <a href="#" class="hover:text-gray-300">About</a>
+        <a href="#" class="hover:text-gray-300">Join</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Main Content -->
+  <main class="max-w-7xl mx-auto p-6">
+    <section class="text-center py-12">
+      <h2 class="text-4xl font-bold mb-4">Welcome to the Gentlemen Club</h2>
+      <p class="text-lg mb-6">Join our exclusive community today.</p>
+      <form id="join-form" class="max-w-md mx-auto space-y-4">
+        <div>
+          <label for="email" class="block text-sm">Email</label>
+          <input type="email" id="email" class="w-full p-2 bg-gray-800 border border-gray-700 rounded" aria-describedby="email-error">
+          <p id="email-error" class="text-red-500 text-sm hidden"></p>
+        </div>
+        <div>
+          <label for="password" class="block text-sm">Password</label>
+          <input type="password" id="password" class="w-full p-2 bg-gray-800 border border-gray-700 rounded" aria-describedby="password-error">
+          <p id="password-error" class="text-red-500 text-sm hidden"></p>
+        </div>
+        <button type="submit" class="w-full p-2 bg-blue-600 hover:bg-blue-700 rounded">Join Now</button>
+      </form>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-gray-800 p-4 text-center">
+    <p>&copy; 2025 Gentlemen Club. All rights reserved.</p>
+  </footer>
+
+  <script src="scripts.js"></script>
+</body>
+</html>

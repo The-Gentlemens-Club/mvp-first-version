@@ -1,0 +1,78 @@
+pragma solidity ^0.8.0;
+
+contract GentlemenClub {
+    address public owner;
+    uint256 public totalBets;
+    uint256 public daoTreasury;
+    mapping(address => uint256) public bets;
+    mapping(address => bool) public outcomes;
+    mapping(address => uint256) public stakedBalance;
+    mapping(uint256 => Proposal) public proposals;
+    uint256 public proposalCount;
+
+    struct Proposal {
+        string description;
+        uint256 voteCount;
+        bool executed;
+    }
+
+    event BetPlaced(address indexed user, uint256 amount, bool outcome);
+    event Staked(address indexed user, uint256 amount);
+    event ProposalCreated(uint256 indexed id, string description);
+    event Voted(uint256 indexed id, address indexed voter);
+
+    constructor() {
+        owner = msg.sender;
+    }
+
+    function placeBet() public payable {
+        require(msg.value > 0, "Bet amount must be greater than 0");
+        bets[msg.sender] += msg.value;
+        totalBets += msg.value;
+        bool outcome = block.timestamp % 2 == 0;
+        outcomes[msg.sender] = outcome;
+        if (outcome) {
+            payable(msg.sender).transfer(msg.value * 2);
+        }
+        uint256 daoShare = (msg.value * 80) / 100;
+        daoTreasury += daoShare;
+        emit BetPlaced(msg.sender, msg.value, outcome);
+    }
+
+    function getLastOutcome(address user) public view returns (bool) {
+        return outcomes[user];
+    }
+
+    function stake(uint256 amount) public {
+        require(amount > 0, "Stake amount must be greater than 0");
+        stakedBalance[msg.sender] += amount;
+        emit Staked(msg.sender, amount);
+    }
+
+    function distributeRevenue() public {
+        require(daoTreasury > 0, "No funds in treasury");
+        uint256 profit = (daoTreasury * 30) / 100;
+        daoTreasury -= profit;
+    }
+
+    function createProposal(string memory description) public {
+        proposals[proposalCount] = Proposal(description, 0, false);
+        emit ProposalCreated(proposalCount, description);
+        proposalCount++;
+    }
+
+    function vote(uint256 proposalId) public {
+        require(proposalId < proposalCount, "Invalid proposal ID");
+        require(!proposals[proposalId].executed, "Proposal already executed");
+        require(stakedBalance[msg.sender] > 0, "Must be a staker to vote");
+        proposals[proposalId].voteCount += stakedBalance[msg.sender];
+        emit Voted(proposalId, msg.sender);
+    }
+
+    function executeProposal(uint256 proposalId) public {
+        require(proposalId < proposalCount, "Invalid proposal ID");
+        require(!proposals[proposalId].executed, "Proposal already executed");
+        require(proposals[proposalId].voteCount > totalBets / 2, "Insufficient votes");
+        proposals[proposalId].executed = true;
+    }
+}

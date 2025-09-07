@@ -1,0 +1,38 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="goldGradient2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFA500;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#DAA520;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="bgGradient2" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#2C1810;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1A0E0A;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="200" height="200" fill="url(#bgGradient2)" rx="20"/>
+  
+  <!-- Cane handle -->
+  <path d="M60 60 Q80 40 100 60 L100 140" stroke="url(#goldGradient2)" stroke-width="6" fill="none" stroke-linecap="round"/>
+  
+  <!-- Cane tip -->
+  <circle cx="100" cy="145" r="4" fill="url(#goldGradient2)"/>
+  
+  <!-- Monocle -->
+  <circle cx="130" cy="80" r="20" stroke="url(#goldGradient2)" stroke-width="3" fill="none"/>
+  <line x1="150" y1="80" x2="165" y2="75" stroke="url(#goldGradient2)" stroke-width="2"/>
+  
+  <!-- Shield background -->
+  <path d="M100 90 L85 105 L85 135 Q85 145 100 150 Q115 145 115 135 L115 105 Z" fill="#8B0000" stroke="url(#goldGradient2)" stroke-width="2"/>
+  
+  <!-- Letter G in shield -->
+  <text x="100" y="130" font-family="serif" font-size="24" font-weight="bold" text-anchor="middle" fill="url(#goldGradient2)">G</text>
+  
+  <!-- Corner decorations -->
+  <circle cx="30" cy="30" r="5" fill="url(#goldGradient2)" opacity="0.6"/>
+  <circle cx="170" cy="30" r="5" fill="url(#goldGradient2)" opacity="0.6"/>
+  <circle cx="30" cy="170" r="5" fill="url(#goldGradient2)" opacity="0.6"/>
+  <circle cx="170" cy="170" r="5" fill="url(#goldGradient2)" opacity="0.6"/>
+</svg>

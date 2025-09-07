@@ -1,0 +1,33 @@
+<svg width="200" height="200" viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="goldGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#D4AF37;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#FFD700;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#B8860B;stop-opacity:1" />
+    </linearGradient>
+    <radialGradient id="bgGradient1" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#1F1F1F;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#000000;stop-opacity:1" />
+    </radialGradient>
+  </defs>
+  
+  <!-- Background circle -->
+  <circle cx="100" cy="100" r="95" fill="url(#bgGradient1)" stroke="url(#goldGradient1)" stroke-width="3"/>
+  
+  <!-- Top hat -->
+  <rect x="70" y="40" width="60" height="35" rx="5" fill="url(#goldGradient1)"/>
+  <ellipse cx="100" cy="75" rx="45" ry="8" fill="url(#goldGradient1)"/>
+  
+  <!-- Hat band -->
+  <rect x="72" y="60" width="56" height="6" fill="#8B0000"/>
+  
+  <!-- Monogram G -->
+  <text x="100" y="135" font-family="serif" font-size="48" font-weight="bold" text-anchor="middle" fill="url(#goldGradient1)">G</text>
+  
+  <!-- Decorative elements -->
+  <circle cx="60" cy="160" r="3" fill="url(#goldGradient1)"/>
+  <circle cx="140" cy="160" r="3" fill="url(#goldGradient1)"/>
+  
+  <!-- Bottom text -->
+  <text x="100" y="180" font-family="serif" font-size="12" text-anchor="middle" fill="#C0C0C0">GENTLEMEN'S CLUB</text>
+</svg>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>The Gentlemen's Club - Licensed GambleFi DAO Platform</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <!-- HERO SECTION -->
+  <header class="hero">
+    <img src="newlogo.jpeg" alt="Gentlemen's Club Logo" class="hero-logo"/>
+    <h1 class="hero-title">The First Licensed GambleFi DAO</h1>
+    <p class="hero-subtitle">Own the House. Share the Profits. Shape the Future of Gambling.</p>
+    <div class="hero-buttons">
+      <a href="#features" class="btn-primary">Learn More</a>
+      <a href="#contact" class="btn-secondary">Contact Us</a>
+    </div>
+  </header>
+
+  <!-- VALUE PROPOSITION -->
+  <section id="features" class="features">
+    <div class="feature-card">
+      <h3>Provably Fair Games</h3>
+      <p>Transparent and verifiable outcomes powered by blockchain technology.</p>
+    </div>
+    <div class="feature-card">
+      <h3>DAO Governance</h3>
+      <p>Token holders shape the platform's direction through proposals and votes.</p>
+    </div>
+    <div class="feature-card">
+      <h3>Revenue Sharing</h3>
+      <p>Earn passive income by staking $GTLM tokens and sharing in the platform’s success.</p>
+    </div>
+  </section>
+
+  <!-- INVESTOR STATS -->
+  <section class="stats">
+    <div class="stat">
+      <h2>$95B+</h2>
+      <p>Global Online Gambling Market</p>
+    </div>
+    <div class="stat">
+      <h2>50%</h2>
+      <p>DAO Revenue Share</p>
+    </div>
+    <div class="stat">
+      <h2>100M</h2>
+      <p>Total $GTLM Token Supply</p>
+    </div>
+  </section>
+
+  <!-- ROADMAP -->
+  <section class="roadmap">
+    <h2>Roadmap</h2>
+    <div class="roadmap-steps">
+      <div class="roadmap-step">
+        <h4>Q1 2025</h4>
+        <p>MVP Launch with key games & staking.</p>
+      </div>
+      <div class="roadmap-step">
+        <h4>Q2 2025</h4>
+        <p>Beta Launch & user feedback integration.</p>
+      </div>
+      <div class="roadmap-step">
+        <h4>Q3 2025</h4>
+        <p>Full launch with governance features.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TEAM -->
+  <section class="team">
+    <h2>Meet the Founders</h2>
+    <div class="team-members">
+      <div class="team-member">
+        <img src="founder1.jpg" alt="Djordje" />
+        <h4>Djordje Petrovic</h4>
+        <p>IT Project Manager & Poker Pro — Strategy & Operations Lead.</p>
+      </div>
+      <div class="team-member">
+        <img src="founder2.jpg" alt="Aleksandar" />
+        <h4>Aleksandar Djordjevic</h4>
+        <p>Senior Blockchain Developer — Smart Contracts & Platform Architecture.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA FOOTER -->
+  <footer class="cta-footer" id="contact">
+    <h2>Be Part of the Future of Gambling</h2>
+    <p>Join the DAO. Own the House.</p>
+    <a href="mailto:contact@gentlemensclub.io" class="btn-primary">Request Demo</a>
+  </footer>
+
+  <!-- EXISTING APP ROOT -->
+  <div id="root"></div>
+
+</body>
+</html>

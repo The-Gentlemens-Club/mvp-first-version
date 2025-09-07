@@ -1,0 +1,148 @@
+{
+  "betSimulations": [
+    {
+      "id": 1,
+      "game": "roulette",
+      "betAmount": "100",
+      "outcome": "Win",
+      "payout": "200",
+      "multiplier": 2.0,
+      "chainlinkVRF": "0x8b3f6ac7d1e204a4e1fdf6fda2b38a7c93dc1e5d",
+      "timestamp": "2025-01-27T17:45:00Z"
+    },
+    {
+      "id": 2,
+      "game": "dice",
+      "betAmount": "50",
+      "outcome": "Loss",
+      "payout": "0",
+      "multiplier": 0,
+      "chainlinkVRF": "0x4c8e5a2f3b9d6e1a8c7f2d5b4e9a8c7f2d5b4e9a",
+      "timestamp": "2025-01-27T17:46:15Z"
+    }
+  ],
+  "nftMinting": {
+    "tiers": [
+      {
+        "name": "Gold Tier",
+        "price": "50 GTLM",
+        "benefits": ["1% Bonus Staking", "VIP Support", "Early Access"],
+        "supply": "500/1000",
+        "rarity": "Rare"
+      },
+      {
+        "name": "Platinum",
+        "price": "150 GTLM", 
+        "benefits": ["2.5% Bonus Staking", "Lifetime Premium", "Founder Status"],
+        "supply": "150/300",
+        "rarity": "Epic"
+      },
+      {
+        "name": "Diamond Elite",
+        "price": "500 GTLM",
+        "benefits": ["5% Bonus Staking", "Council Access", "Elite Events"],
+        "supply": "25/100",
+        "rarity": "Legendary"
+      }
+    ]
+  },
+  "daoProposals": [
+    {
+      "id": 1,
+      "title": "Increase Treasury Allocation to 30% NGR",
+      "description": "Allocate 30% of Net Gaming Revenue to treasury for platform development",
+      "votes": 1247,
+      "status": "active",
+      "approvalThreshold": 75,
+      "currentApproval": 78
+    },
+    {
+      "id": 2,
+      "title": "Raise Staking Rewards to 25% APY",
+      "description": "Increase GTLM staking rewards to maintain competitive yields",
+      "votes": 892,
+      "status": "active", 
+      "approvalThreshold": 75,
+      "currentApproval": 65
+    },
+    {
+      "id": 3,
+      "title": "Fund New Game Integration",
+      "description": "Allocate budget for Evolution Gaming partnership integration",
+      "votes": 1543,
+      "status": "passed",
+      "approvalThreshold": 75,
+      "currentApproval": 82
+    }
+  ],
+  "marketAnalytics": {
+    "revenue": {
+      "year1": 1000000,
+      "year2": 3500000,
+      "year3": 8000000,
+      "currency": "USD"
+    },
+    "market": {
+      "tam": 10000000000,
+      "sam": 500000000,
+      "som": 50000000,
+      "currency": "USD"
+    },
+    "userMetrics": {
+      "totalUsers": 2847,
+      "activeUsers": 1247,
+      "stakingUsers": 892,
+      "nftHolders": 543
+    },
+    "financialMetrics": {
+      "dailyVolume": 425000,
+      "totalValueLocked": 1850000,
+      "houseProfit": 48200,
+      "stakingApy": 24.5,
+      "currency": "USD"
+    }
+  },
+  "compliance": {
+    "kycRequired": true,
+    "licenseStatus": "Pending Curaçao",
+    "testnetOnly": true,
+    "demoMode": true,
+    "disclaimers": [
+      "DEMO ONLY - NOT FOR REAL TRANSACTIONS",
+      "SEPOLIA TESTNET ENVIRONMENT",
+      "INVESTOR PRESENTATION PURPOSES",
+      "PENDING CURAÇAO GAMING LICENSE"
+    ]
+  },
+  "investment": {
+    "round": "Pre-seed",
+    "target": 400000,
+    "currency": "USD",
+    "use_of_funds": [
+      {
+        "category": "Licensing",
+        "percentage": 40,
+        "amount": 160000,
+        "description": "Curaçao gaming license acquisition"
+      },
+      {
+        "category": "Development", 
+        "percentage": 35,
+        "amount": 140000,
+        "description": "Platform development and security audits"
+      },
+      {
+        "category": "Marketing",
+        "percentage": 15,
+        "amount": 60000,
+        "description": "User acquisition and brand building"
+      },
+      {
+        "category": "Operations",
+        "percentage": 10,
+        "amount": 40000,
+        "description": "Team and operational expenses"
+      }
+    ]
+  }
+}

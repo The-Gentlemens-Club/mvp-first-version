@@ -1,0 +1,36 @@
+Add a "Brand Identity Collection" segment to the GentlemenClub-PoC-version website, creating a dedicated page to showcase NFTs that represent The Gentlemen's Club’s luxurious, compliant GambleFi DAO identity (Investor Deck Slide 2). The section must display a collection of NFTs (e.g., DAO membership tokens, casino assets, or $GTLM staking perks, Slide 5) in a visually stunning, user-friendly gallery, preserving the “Old Luxury” aesthetic (dark blue #1E3A8A, gold #D4AF37, white #FFFFFF, Playfair Display font, Slide 9).
+
+Requirements:
+1. **NFT Collection Page**:
+   - Create a new page (`/nft-collection`, e.g., `nft-collection.html` or React component).
+   - Display a grid of 6–8 mock NFT cards, each with:
+     - Placeholder image (e.g., gold-framed casino chip or membership badge).
+     - Title (e.g., “Gold Tier Membership NFT”).
+     - Description (e.g., “Grants 1% bonus $GTLM staking rewards, Slide 4”).
+     - Button: “View on Blockchain” (mock link, Slide 5: $GTLM integration).
+   - Use a responsive 2–3 column grid (Tailwind CSS or custom CSS).
+2. **Design**:
+   - Apply “Old Luxury” aesthetic: dark blue background, gold accents, Playfair Display for headings, Lora for body text.
+   - Add subtle animations (e.g., hover scale effect on NFT cards).
+   - Include a header: “Brand Identity Collection: Exclusive NFTs” (Slide 9).
+   - Footer with “gentlemensclub.app” and mock social links.
+3. **Integration**:
+   - Add a navigation link to `/nft-collection` in `index.html` (e.g., “NFT Collection” in navbar).
+   - Mock NFT data in a JSON file (e.g., `nfts.json`) with fields: `id`, `title`, `description`, `image`.
+   - Use JavaScript to dynamically render NFT cards from `nfts.json`.
+4. **Compliance**:
+   - Include a placeholder KYC check (e.g., “Verify to Mint” button, Slide 6: Curaçao license).
+5. **Performance**:
+   - Optimize images (use placeholders or compress to <100KB).
+   - Minify CSS/JS for fast load times.
+6. **Constraints**:
+   - Use existing stack (Node.js, JavaScript, HTML/CSS, or React if in `package.json`).
+   - Avoid external APIs or file I/O unless mocked (Replit compatibility).
+   - Update `/public` or `/src`, preserving existing pages (e.g., `index.html`, `betting.html`).
+   - Do not modify smart contracts (e.g., `governance.sol`) unless needed for UI.
+   - Add comments linking to Investor Deck (e.g., `// Slide 5: NFT as $GTLM perk`).
+
+Output:
+- New files: `nft-collection.html`, `nfts.json`, updated `styles.css`, and modified `index.html`.
+- A `/assets` folder with mock NFT images (e.g., `nft1.png`, `nft2.png`).
+- Update `UI-UX-Report.md` to document the NFT section and its alignment with the story: “A luxurious, compliant GambleFi DAO with exclusive NFT assets” (Slides 2, 9).

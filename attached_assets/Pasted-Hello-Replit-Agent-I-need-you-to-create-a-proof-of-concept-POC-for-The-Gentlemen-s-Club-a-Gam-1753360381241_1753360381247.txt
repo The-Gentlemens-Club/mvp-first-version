@@ -1,0 +1,33 @@
+Hello Replit Agent,
+
+I need you to create a proof of concept (POC) for The Gentlemen's Club, a GambleFi DAO system, to demonstrate a provably fair dice game, $GTLM token staking with revenue sharing, and DAO governance, all hosted on Replit. The POC should align with our Unified Compliance Framework and Hybrid Enterprise Model, using Ethereum Sepolia testnet for the blockchain. Below are the detailed instructions and code for three files: `index.html`, `GentlemenClub.sol`, and `server.js`. Please follow these steps precisely.
+
+**Instructions**:
+1. **Create a Node.js Project**:
+   - Initialize a new Node.js Repl.
+   - Ensure the project supports HTML, JavaScript, and Solidity files.
+2. **Set Up Files**:
+   - Create `index.html` for the React frontend with Tailwind CSS, connecting to MetaMask for betting, staking, and governance.
+   - Create `GentlemenClub.sol` for the Solidity smart contract handling bets, staking, and DAO proposals.
+   - Create `server.js` for the Node.js backend to serve the frontend.
+3. **Install Dependencies**:
+   - Install `express`, `web3`, and `hardhat` using `npm install express web3 hardhat`.
+4. **Deploy Smart Contract**:
+   - Use Hardhat to compile and deploy `GentlemenClub.sol` to the Ethereum Sepolia testnet.
+   - Update the `contractAddress` and `contractABI` in `index.html` with the deployed contract details.
+5. **Run and Test**:
+   - Start the server with `node server.js`.
+   - Generate a live URL for the Repl.
+   - Test the POC using MetaMask to:
+     - Place bets in the dice game (simulated $GTLM).
+     - Stake tokens and check revenue share (30% of profits).
+     - Submit and vote on governance proposals (weighted by staked tokens).
+     - Verify geo-restriction prompts for staking compliance.
+   - Ensure all transactions are logged on-chain for transparency.
+6. **Output**:
+   - Provide the live URL of the running POC.
+   - Confirm successful setup and testing in a brief summary.
+
+**File Contents**:
+
+1. **index.html**:
