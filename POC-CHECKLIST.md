@@ -88,4 +88,3 @@
 
 **Status: READY FOR INVESTOR PRESENTATION** ✅
 
-*Last Updated: January 2025*
